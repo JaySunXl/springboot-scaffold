@@ -1,0 +1,2 @@
+# springboot-scaffold
+daily
