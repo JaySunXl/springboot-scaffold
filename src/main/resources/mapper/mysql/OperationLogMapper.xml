@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jaysunxl.scaffold.dao.OperationLogDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jaysunxl.scaffold.entity.OperationLog">
+        <id column="id" property="id"/>
+        <result column="create_time" property="createTime"/>
+        <result column="level" property="level"/>
+        <result column="operation_unit" property="operationUnit"/>
+        <result column="method" property="method"/>
+        <result column="args" property="args"/>
+        <result column="user_id" property="userId"/>
+        <result column="user_name" property="userName"/>
+        <result column="describe" property="describe"/>
+        <result column="operation_type" property="operationType"/>
+        <result column="run_time" property="runTime"/>
+        <result column="return_value" property="returnValue"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, create_time, level, operation_unit, method, args, user_id, user_name, `describe`,
+        operation_type, run_time, return_value
+    </sql>
+
+    <!--通用插入结果-->
+    <sql id="insert">
+        #{id,jdbcType=VARCHAR},
+        #{createTime,jdbcType=VARCHAR},
+        #{level,jdbcType=VARCHAR},
+        #{operationUnit,jdbcType=VARCHAR},
+        #{method,jdbcType=VARCHAR},
+        #{args,jdbcType=VARCHAR},
+        #{userId,jdbcType=VARCHAR},
+        #{userName,jdbcType=VARCHAR},
+        #{describe,jdbcType=VARCHAR},
+        #{operationType,jdbcType=VARCHAR},
+        #{runTime,jdbcType=VARCHAR},
+        #{returnValue,jdbcType=VARCHAR}
+    </sql>
+
+    <insert id="insertOne" parameterType="com.jaysunxl.scaffold.entity.OperationLog">
+        insert into operation_log ( level, operation_unit, method, args, user_id, user_name, `describe`,
+            operation_type, run_time, return_value
+        ) value(
+            #{level,jdbcType=VARCHAR},
+            #{operationUnit,jdbcType=VARCHAR},
+            #{method,jdbcType=VARCHAR},
+            #{args,jdbcType=VARCHAR},
+            #{userId,jdbcType=VARCHAR},
+            #{userName,jdbcType=VARCHAR},
+            #{describe,jdbcType=VARCHAR},
+            #{operationType,jdbcType=VARCHAR},
+            #{runTime,jdbcType=VARCHAR},
+            #{returnValue,jdbcType=VARCHAR}
+        )
+    </insert>
+</mapper>

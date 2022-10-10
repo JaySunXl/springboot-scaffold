@@ -17,3 +17,8 @@ spring:
       maximum-pool-size: 200 # 连接池最大数
       connection-timeout: 30000 # 单位ms 30s
       max-lifetime: 60000 # 超时自动时长60s
+
+
+# mybatis 相关设置
+mybatis:
+  mapper-locations: classpath:mapper/mysql/*Mapper.xml,classpath*:/mapper/oracle/*Mapper.xml
