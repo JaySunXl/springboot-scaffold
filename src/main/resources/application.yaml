@@ -1,2 +1,19 @@
 server:
   port: 8080
+
+spring:
+  aop:
+    auto: true #启动aop配置
+  # mysql连接
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/scaffold?serverTimezone=Asia/Shanghai&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+    hikari:
+      pool-name: PrimaryDatabasePool
+      minimum-idle: 5 # 最小连接数
+      idle-timeout: 15000 # 单个连接的最长连接数 15s
+      maximum-pool-size: 200 # 连接池最大数
+      connection-timeout: 30000 # 单位ms 30s
+      max-lifetime: 60000 # 超时自动时长60s

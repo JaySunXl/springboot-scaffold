@@ -22,11 +22,12 @@
         <maven.compiler.target>8</maven.compiler.target>
         <spring-cloud.version>2021.0.1</spring-cloud.version>
         <!--<orai18n.version>21.5.0.0</orai18n.version>-->
-        <!--<mybatis.spring.boot.starter.version>2.2.2</mybatis.spring.boot.starter.version>-->
+        <mybatis.spring.boot.starter.version>2.2.2</mybatis.spring.boot.starter.version>
         <fastjson.version>1.2.83</fastjson.version>
         <lombok.version>1.16.6</lombok.version>
         <commons-lang3.version>3.12.0</commons-lang3.version>
         <guava.version>23.0</guava.version>
+        <mysql.version>5.1.47</mysql.version>
     </properties>
 
     <dependencies>
@@ -52,20 +53,26 @@
             <scope>test</scope>
         </dependency>
         <!--数据库相关-->
-        <!-- <dependency>
-           <groupId>org.springframework.boot</groupId>
-           <artifactId>spring-boot-starter-jdbc</artifactId>
-       </dependency>-->
-        <!--<dependency>
-            <groupId>com.oracle.database.nls</groupId>
-            <artifactId>orai18n</artifactId>
-            <version>${orai18n.version}</version>
-        </dependency>-->
-        <!--<dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>${mybatis.spring.boot.starter.version}</version>
-        </dependency>-->
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+            <version>${mysql.version}</version>
+        </dependency>
+        <!--<dependency>
+           <groupId>com.oracle.database.nls</groupId>
+           <artifactId>orai18n</artifactId>
+           <version>${orai18n.version}</version>
+       </dependency>-->
 
         <!--常用类库-->
         <dependency>
