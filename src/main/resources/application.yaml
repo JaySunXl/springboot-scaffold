@@ -1,3 +1,4 @@
+
 server:
   port: 8080
 
@@ -17,6 +18,9 @@ spring:
       maximum-pool-size: 200 # 连接池最大数
       connection-timeout: 30000 # 单位ms 30s
       max-lifetime: 60000 # 超时自动时长60s
+  # 多环境下配置使用不同的配置 可以设置为dev开发环境 test测试环境 prod正式环境
+  #profiles:
+    #active: dev
 
 
 # mybatis 相关设置
