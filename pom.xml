@@ -44,6 +44,7 @@
         <commons-lang3.version>3.12.0</commons-lang3.version>
         <guava.version>23.0</guava.version>
         <mysql.version>5.1.47</mysql.version>
+        <jedis.version>3.7.1</jedis.version>
     </properties>
 
     <dependencies>
@@ -97,6 +98,24 @@
            <artifactId>orai18n</artifactId>
            <version>${orai18n.version}</version>
        </dependency>-->
+
+        <!--redis相关-->
+        <!--jedis-->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${jedis.version}</version>
+        </dependency>
+        <!--springboot-redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!--<dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+        </dependency>-->
+        <!--redisson-->
 
         <!--常用类库-->
         <dependency>

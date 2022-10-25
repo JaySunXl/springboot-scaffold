@@ -21,6 +21,15 @@ spring:
   # 多环境下配置使用不同的配置 可以设置为dev开发环境 test测试环境 prod正式环境
   #profiles:
     #active: dev
+  redis:
+    host: 192.168.25.139
+    port: 6379
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: 100
 
 
 # mybatis 相关设置
