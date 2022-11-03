@@ -45,6 +45,7 @@
         <guava.version>23.0</guava.version>
         <mysql.version>5.1.47</mysql.version>
         <jedis.version>3.7.1</jedis.version>
+        <hutool.version>5.8.6</hutool.version>
     </properties>
 
     <dependencies>
@@ -139,6 +140,11 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
         </dependency>
 
     </dependencies>
