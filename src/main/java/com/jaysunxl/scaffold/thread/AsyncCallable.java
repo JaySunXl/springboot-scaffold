@@ -14,7 +14,12 @@ import java.util.concurrent.Callable;
 public class AsyncCallable implements Callable<String> {
     @Override
     public String call() throws Exception {
-        log.info("异步执行的方式1-3");
-        return "异步执行的方式1-3";
+        try {
+            log.info("异步执行的方式1-3");
+            int i = 1 / 0;
+            return "异步执行的方式1-3";
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
