@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素</title>
+</head>
+<body>
+    <div onchange="test()">
+        元素期间
+        <select id="period">
+            <option value="1">年</option>
+            <option value="2">季</option>
+            <option value="3">月</option>
+        </select>
+    </div>
+    <div>
+        <div id="year" style="display: block;">
+            <input type="radio"/>预算
+            <input type="radio"/>决算
+            <input type="radio"/>预算调整1
+            <input type="radio"/>预算调整2
+            <input type="radio"/>预算调整3
+        </div>
+        <div id="quarter" style="display: none;">
+            <input type="radio"/>季报
+        </div>
+        <div id="month" style="display: none;">
+            <input type="radio"/>月报
+        </div>
+    </div>
+</body>
+<script>
+    function test(){
+        let period = document.getElementById("period").options[document.getElementById("period").selectedIndex].value;
+        if (period == 1){
+            document.getElementById('year').style.display = 'block';
+            document.getElementById('quarter').style.display = 'none';
+            document.getElementById('month').style.display = 'none';
+        }
+        if (period == 2){
+            document.getElementById('year').style.display = 'none';
+            document.getElementById('quarter').style.display = 'block';
+            document.getElementById('month').style.display = 'none';
+        }
+        if (period == 3){
+            document.getElementById('year').style.display = 'none';
+            document.getElementById('quarter').style.display = 'none';
+            document.getElementById('month').style.display = 'block';
+        }
+    }
+</script>
+</html>
