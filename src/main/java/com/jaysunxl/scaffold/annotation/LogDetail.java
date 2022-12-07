@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
 /**
  * 日记记录注解 添加该注解以后会在执行方法时在数据库中同步记录日志
  *
- * @author sunxind
+ * @author JaySunXl
  * @create 2022-10-10
  * @description
  */

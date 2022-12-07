@@ -1,7 +1,7 @@
 package com.jaysunxl.scaffold.constant;
 
 /**
- * @author sunxind
+ * @author JaySunXl
  * @create 2022-09-25
  * @description
  */

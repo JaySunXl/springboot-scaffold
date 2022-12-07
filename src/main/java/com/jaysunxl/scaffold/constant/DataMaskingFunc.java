@@ -5,7 +5,7 @@ import org.springframework.util.StringUtils;
 
 
 /**
- * @author sunxind
+ * @author JaySunXl
  * @date 2022-10-21
  */
 public enum DataMaskingFunc {

@@ -1,7 +1,7 @@
 package com.jaysunxl.scaffold.util;
 
 /**
- * @author sunxind
+ * @author JaySunXl
  * @date 2022-11-22
  */
 public class MathUtils {

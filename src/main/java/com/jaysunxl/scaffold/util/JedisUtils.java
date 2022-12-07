@@ -5,7 +5,7 @@ import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 /**
- * @author sunxind
+ * @author JaySunXl
  * @date 2022-10-25
  */
 public class JedisUtils {

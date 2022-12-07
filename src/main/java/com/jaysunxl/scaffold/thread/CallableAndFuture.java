@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 通过Future 异步执行任务 future通过get方法阻塞等待异步获取执行的运行结果，性能比较差
  *
- * @author sunxind
+ * @author JaySunXl
  * @date 2022-11-10
  */
 @Slf4j

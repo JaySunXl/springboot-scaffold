@@ -3,7 +3,7 @@ package com.jaysunxl.scaffold.constant;
 import com.jaysunxl.scaffold.service.IResult;
 
 /**
- * @author sunxind
+ * @author JaySunXl
  * @date 2022-10-19
  */
 public enum ResultEnum implements IResult {

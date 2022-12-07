@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
 
 /**
  * 数据面具 为敏感数据进行脱敏操作
- * @author sunxind
+ * @author JaySunXl
  * @date 2022-10-21
  */
 @Target({ElementType.FIELD,ElementType.TYPE})

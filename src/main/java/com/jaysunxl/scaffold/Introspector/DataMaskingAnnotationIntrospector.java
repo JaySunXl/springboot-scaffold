@@ -7,7 +7,7 @@ import com.jaysunxl.scaffold.entity.DataMaskingSerializer;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author sunxind
+ * @author JaySunXl
  * @date 2022-10-21
  */
 @Slf4j

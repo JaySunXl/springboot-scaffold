@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 /**
- * @author sunxind
+ * @author JaySunXl
  * @date 2022-10-19
  */
 @RestControllerAdvice(basePackages = "com.jaysunxl.scaffold")

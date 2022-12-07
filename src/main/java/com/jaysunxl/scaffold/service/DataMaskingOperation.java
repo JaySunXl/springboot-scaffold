@@ -1,7 +1,7 @@
 package com.jaysunxl.scaffold.service;
 
 /**
- * @author sunxind
+ * @author JaySunXl
  * @date 2022-10-21
  */
 public interface DataMaskingOperation {

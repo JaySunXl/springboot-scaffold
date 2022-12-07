@@ -3,7 +3,7 @@ package com.jaysunxl.scaffold.service;
 import com.jaysunxl.scaffold.entity.OperationLog;
 
 /**
- * @author sunxind
+ * @author JaySunXl
  * @create 2022-10-10
  * @description
  */

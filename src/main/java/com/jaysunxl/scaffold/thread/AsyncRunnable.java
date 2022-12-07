@@ -4,7 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * 异步执行的方式1-1 实现Runnable接口
- * @author sunxind
+ * @author JaySunXl
  * @date 2022-11-10
  */
 @Slf4j

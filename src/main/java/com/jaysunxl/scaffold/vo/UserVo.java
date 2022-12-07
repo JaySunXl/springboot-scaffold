@@ -6,7 +6,7 @@ import com.jaysunxl.scaffold.constant.DataMaskingFunc;
 import java.io.Serializable;
 
 /**
- * @author sunxind
+ * @author JaySunXl
  * @date 2022-10-21
  */
 public class UserVo implements Serializable {

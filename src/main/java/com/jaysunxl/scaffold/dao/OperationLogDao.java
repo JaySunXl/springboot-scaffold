@@ -4,7 +4,7 @@ import com.jaysunxl.scaffold.entity.OperationLog;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
- * @author sunxind
+ * @author JaySunXl
  * @create 2022-10-10
  * @description
  */

@@ -21,7 +21,7 @@ import static cn.hutool.core.thread.ThreadUtil.sleep;
  *  1. whenComplete 未发生异常正常返回值发生异常就返回异常
  *  2. exceptionally 确认会发生异常
  *  3. handle 基本一致，区别在于handle有返回值
- * @author sunxind
+ * @author JaySunXl
  * @date 2022-11-10
  */
 public class CallableAndCompletableFuture {
