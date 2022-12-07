@@ -37,7 +37,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <spring-cloud.version>2021.0.1</spring-cloud.version>
-        <!--<orai18n.version>21.5.0.0</orai18n.version>-->
+        <orai18n.version>21.5.0.0</orai18n.version>
         <mybatis.spring.boot.starter.version>2.2.2</mybatis.spring.boot.starter.version>
         <fastjson.version>1.2.83</fastjson.version>
         <lombok.version>1.16.6</lombok.version>
@@ -46,6 +46,7 @@
         <mysql.version>5.1.47</mysql.version>
         <jedis.version>3.7.1</jedis.version>
         <hutool.version>5.8.6</hutool.version>
+        <mybatis-plus.version>3.5.2</mybatis-plus.version>
     </properties>
 
     <dependencies>
@@ -70,6 +71,10 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+        </dependency>
         <!--数据库相关-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -88,17 +93,36 @@
             <version>1.4.1</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
+        <!--mybatis-plus代码生成器-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
             <version>${mysql.version}</version>
         </dependency>
-        <!--<dependency>
+
+        <!--oracle相关-->
+        <dependency>
            <groupId>com.oracle.database.nls</groupId>
            <artifactId>orai18n</artifactId>
            <version>${orai18n.version}</version>
-       </dependency>-->
+       </dependency>
+        <dependency>
+            <groupId>com.oracle.database.jdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <scope>runtime</scope>
+        </dependency>
 
         <!--redis相关-->
         <!--jedis-->
