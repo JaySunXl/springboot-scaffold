@@ -1,4 +1,3 @@
-
 server:
   port: 8080
 
@@ -20,7 +19,7 @@ spring:
       max-lifetime: 60000 # 超时自动时长60s
   # 多环境下配置使用不同的配置 可以设置为dev开发环境 test测试环境 prod正式环境
   #profiles:
-    #active: dev
+  #active: dev
   redis:
     host: 192.168.25.139
     port: 6379
@@ -30,6 +29,14 @@ spring:
         max-idle: 8
         min-idle: 0
         max-wait: 100
+  # 文件上传设置
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 50MB
+
+document:
+  uploadPath: /data/txt
 
 
 # mybatis 相关设置
