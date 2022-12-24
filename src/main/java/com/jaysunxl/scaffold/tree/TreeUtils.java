@@ -1,7 +1,6 @@
 package com.jaysunxl.scaffold.tree;
 
 import com.google.common.collect.Lists;
-import com.jaysunxl.scaffold.tree.TreeNode;
 import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
